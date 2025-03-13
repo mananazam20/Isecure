@@ -169,28 +169,7 @@ if($disallow_activation === 1) {
         add_filter('upload_mimes', 'block_extra_mime_type');
     }
 
-//     $enable_redirect_url= intval(get_option('enable_login_url'));
-//     if($enable_redirect_url === 1) {
-        
-//         add_filter('login_url', 'my_custom_login_url', 10, 3);
-//     }
 
-
-// function my_custom_login_url($login_url, $redirect, $force_reauth) {
-//     echo '<script> console.log("test"); </script>';
-    
-//     $redirect_url = get_option('isecure_wp_url');
-//     // Define your custom login URL directly
-
-//     $custom_login_url =  home_url($redirect_url);
-//     print_r($custom_login_url);
-    
-   
-
-//     $login_url = site_url( $redirect_url, 'login' );
-//     // Return the modified login URL
-//     return $login_url;
-// }
     
 $enable_redirect_url = intval(get_option('enable_login_url'));
 if ($enable_redirect_url === 1) {
