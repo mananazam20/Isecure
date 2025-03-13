@@ -1,0 +1,1 @@
+<h1>admin is intelligent</h1>
